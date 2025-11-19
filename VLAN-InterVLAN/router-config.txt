@@ -1,1 +1,16 @@
 
+! Router R1 - link to SW2
+enable
+configure terminal
+
+interface GigabitEthernet0/0
+ description Link to SW2
+ ip address 10.0.0.194 255.255.255.252
+ no shutdown
+exit
+
+! (Optional) Add default route to internet/cloud if present
+! ip route 0.0.0.0 0.0.0.0 <ISP_NEXT_HOP>
+
+end
+write memory
