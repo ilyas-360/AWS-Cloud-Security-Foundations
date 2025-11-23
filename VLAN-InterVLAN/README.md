@@ -25,7 +25,6 @@ This repository shows VLAN creation, trunk configuration, SVIs (last usable as g
 3. Apply `svi-config.txt` on SW2 (enables `ip routing`).  
 4. Apply `router-config.txt` on router R1.  
 5. Set PCs IPs according to addressing plan and default gateways to the SVI IPs.  
-6. Run verification commands and add screenshots to `screenshots/`.
 
 ## Screenshots (stored in `screenshots/`)
 - `vlan-show-sw1.png` — `show vlan brief` on SW1  
