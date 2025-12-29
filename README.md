@@ -1,29 +1,87 @@
-# Hybrid Cloud Security Foundation: Enterprise Networking for AWS Connectivity
+AWS Cloud Security Foundations
+Hybrid Networking & Security Architecture
+CCNA → AWS Cloud Security Engineering
+This repository documents my enterprise networking foundation as I transition from CCNA-level infrastructure engineering toward AWS Cloud Security Engineering. It demonstrates how on-prem enterprise network security principles translate directly into AWS hybrid cloud architectures.
 
-🎯 **Objective**
-Secure high-availability enterprise network designed to bridge on-premises infrastructure with AWS Cloud. Focused on traffic segmentation, high-speed connectivity, and Principle of Least Privilege (PoLP).
+🎯 Project Objective
+Design and implement a secure, highly available enterprise network architecture that provides:
 
-🛡️ **AWS Security & Infrastructure Alignment**
-- **Zero Trust Underlay:** Port Security and DHCP Snooping establish hardware trust signals.
-- **Infrastructure Segmentation:** VLAN isolation mapped to AWS Security Groups & NACLs.
-- **Hardened Management Plane:** Restricted SSHv2 + ACL-based admin access, simulating AWS Site-to-Site VPN & Direct Connect security.
+Traffic segmentation and isolation (VLAN-based)
+Redundant routing and failover (HSRP, OSPF)
+Hardened management and control planes
+A solid foundation for AWS hybrid connectivity (VPN / Direct Connect)
 
-🛠️ **Technical Implementation**
-- High Availability: HSRP + EtherChannel (LACP)
-- Hybrid Routing: OSPF with preparation for BGP peering to AWS
-- Traffic Egress: NAT/PAT with logging for CloudWatch-like audits
+This project establishes the networking and security fundamentals required to secure AWS hybrid cloud environments.
 
-📁 **Repository Structure**
-- `configs/` - Core, Distribution, Access, Edge device configurations
-- `design-docs/` - Addressing plans and hybrid cloud design
-- `security-control-plane/` - Management plane hardening & policies
-- `verification/` - Connectivity audits & security validation
-- `future-aws-integration/` - Terraform modules & VPN setup
+🛡️ Security Architecture
+Zero Trust Network Foundation
 
-🚀 **Planned AWS Integration**
-1. Site-to-Site VPN from Edge Router to AWS VPC  
-2. Terraform IaC for hybrid cloud deployment  
+Port Security & DHCP Snooping (hardware trust layer)
+VLAN-based segmentation (conceptually mapped to AWS Security Groups & NACLs)
+Management plane hardening (SSHv2, ACL restrictions)
+Least privilege access enforcement
 
-**Ilyas Benkhadra**  
-*Cloud Security Engineer | AWS Infrastructure & Network Hardening*
+AWS Conceptual Translation
+These principles directly map to:
 
+AWS VPC and subnet architecture
+Security Group and Network ACL design
+AWS Site-to-Site VPN security posture
+Direct Connect private virtual interfaces
+
+
+🛠️ Technical Implementation
+High Availability
+
+HSRP for default gateway redundancy
+EtherChannel with LACP for link aggregation
+Redundant core / distribution layer design
+
+Routing & Connectivity
+
+OSPF for dynamic routing
+Multi-area OSPF (scalability foundation)
+Prepared for future BGP integration with AWS
+
+Traffic Control
+
+NAT / PAT with logging
+ACL-based traffic filtering
+VLAN-based segmentation and isolation
+
+
+📁 Repository Structure
+AWS-Cloud-Security-Foundations/
+├─ configs/                   # Device configurations (Core, Distribution, Access, Edge)
+├─ design-docs/               # Topology diagrams, addressing plans, segmentation logic
+├─ security-control-plane/    # Management hardening, least privilege design
+├─ verification/              # Connectivity tests, security validation
+└─ future-aws-integration/    # Planned: Terraform, Site-to-Site VPN
+
+🚀 Next Phase: AWS Integration (Target: Q2 2026)
+Planned implementations:
+
+AWS Site-to-Site VPN from on-prem edge to AWS VPC
+Terraform modules for hybrid deployment
+CloudWatch logging and monitoring integration
+Security automation using Python + Boto3
+
+
+📚 Skills Demonstrated
+
+Enterprise network design and implementation
+VLAN segmentation and traffic isolation
+High-availability protocols (HSRP, EtherChannel)
+Dynamic routing (OSPF)
+Network security hardening
+Technical documentation and verification
+
+Foundation for: AWS VPC architecture, hybrid cloud security, infrastructure-as-code
+
+👤 Author
+Ilyas Benkhadra
+Cloud Security Engineering | AWS SAA & Security Specialty in Progress | CCNA
+🔗 LinkedIn: https://www.linkedin.com/in/ilyas-benkhadra-a118582b4/
+💻 GitHub: https://github.com/ilyas-360
+📧 Email: ilyasbenkhadra10@gmail.com
+📍 Fes, Morocco
