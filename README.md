@@ -80,7 +80,7 @@ Foundation for: AWS VPC architecture, hybrid cloud security, infrastructure-as-c
 
 👤 Author
 Ilyas Benkhadra
-Cloud Security Engineering | AWS SAA & Security Specialty in Progress | CCNA
+Cloud Security Engineering | AWS SAA  in Progress | CCNA
 🔗 LinkedIn: https://www.linkedin.com/in/ilyas-benkhadra-a118582b4/
 💻 GitHub: https://github.com/ilyas-360
 📧 Email: ilyasbenkhadra10@gmail.com
