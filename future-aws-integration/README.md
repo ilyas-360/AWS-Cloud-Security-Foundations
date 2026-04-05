@@ -1,33 +1,40 @@
 # Future AWS Integration — In Active Development
 
-This folder is the bridge from the on-premises enterprise networking foundation in this repository to production-grade cloud security engineering.
+This folder serves as the **bridge** from the on-premises enterprise networking foundation in this repository to production-grade AWS Cloud Security Engineering.
 
-The CCNA lab established the fundamentals: VLAN segmentation, OSPF routing, HSRP failover, ACL hardening, management plane hardening. These are not background knowledge — they are direct prerequisites for designing secure AWS hybrid architectures.
+The CCNA lab here established core fundamentals (VLAN segmentation, OSPF routing, HSRP failover, ACL hardening, management plane security). These are direct prerequisites for secure hybrid cloud architectures.
 
 ## Active Project
 
-I am currently building a **Zero Trust Multi-Account AWS Security Architecture** that implements these exact concepts at the cloud layer.
+I am currently building a **Zero Trust Multi-Account AWS Security Architecture** that applies these same principles at cloud scale.
 
-👉 **[github.com/ilyas-360/zero-trust-aws](https://github.com/ilyas-360/zero-trust-aws)**
+👉 **[zero-trust-aws Repository](https://github.com/ilyas-360/zero-trust-aws)**
 
-## How This Repo Maps to That One
+## Concept Mapping
 
-| On-Prem (this repo) | AWS Implementation (zero-trust-aws) |
-|---|---|
-| VLAN segmentation | VPC subnets + Security Groups + NACLs |
-| ACL-based traffic filtering | Security Groups + Transit Gateway route tables |
-| Management plane hardening | SCPs + IAM permission boundaries |
-| HSRP / redundant routing | Transit Gateway + multi-AZ design |
-| OSPF dynamic routing | BGP over Site-to-Site VPN to Transit Gateway |
-| SSHv2 + least privilege | IAM role assumption chains + no persistent credentials |
+| On-Prem (this repo)              | AWS Implementation (zero-trust-aws)                  |
+|----------------------------------|-----------------------------------------------------|
+| VLAN segmentation                | VPC subnets + Security Groups + NACLs               |
+| ACL-based traffic filtering      | Security Groups + Transit Gateway route tables      |
+| Management plane hardening       | SCPs + IAM permission boundaries                    |
+| HSRP / redundant routing         | Transit Gateway + multi-AZ design                   |
+| OSPF dynamic routing             | BGP over Site-to-Site VPN                           |
+| SSHv2 + least privilege          | IAM role assumption chains + no persistent keys     |
 
-## What Is Being Built There
+## What Is Being Built in the New Project
 
 - AWS Organizations with 5 dedicated accounts (Management, Security, Logging, Network, Workload)
-- Service Control Policies enforced at the organization level
-- IAM permission boundaries closing privilege escalation paths
-- Site-to-Site VPN connecting simulated on-prem to AWS Transit Gateway
-- Centralized GuardDuty, Security Hub, and CloudTrail across all accounts
-- Full Terraform IaC — modular, documented, reproducible
+- Organization-level Service Control Policies (SCPs)
+- IAM permission boundaries to prevent privilege escalation
+- Site-to-Site VPN for hybrid connectivity (on-prem simulation ↔ AWS Transit Gateway)
+- Centralized observability (GuardDuty, Security Hub, Organization Trail CloudTrail)
+- Full modular Terraform IaC
+
+**Status (April 2026):** Architecture design and SCP policies complete. Terraform modules actively in development with daily commits. Verification screenshots and deployment outputs coming this week.
+
+---
+
+This foundation repo established the networking & security base.  
+The new repo takes it to production-grade Zero Trust cloud security.
 
 **Status:** Architecture and SCP policies complete. Terraform modules in active development (April 2026).
