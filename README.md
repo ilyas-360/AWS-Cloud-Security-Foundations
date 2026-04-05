@@ -72,11 +72,11 @@ AWS-Cloud-Security-Foundations/
 ---
 
 🚀 Next Phase: AWS Integration — In Active Development
-This on-premises foundation is now being extended into full production-grade cloud security.
+This on-prem foundation is now being extended into production-grade cloud security.
 
-👉 **[zero-trust-aws](https://github.com/ilyas-360/zero-trust-aws)** — Zero Trust Multi-Account AWS Security Architecture (Terraform IaC, SCPs, hybrid VPN, GuardDuty/Security Hub, etc.)
+👉 **[zero-trust-aws](https://github.com/ilyas-360/zero-trust-aws)**  
+Zero Trust Multi-Account AWS Security Architecture (Terraform IaC, SCPs, IAM permission boundaries, hybrid VPN, GuardDuty + Security Hub, etc.)
 
-See `future-aws-integration/` for the conceptual mapping and bridge between the two projects.
 
 ## 📚 Skills Demonstrated
 
