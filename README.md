@@ -64,10 +64,10 @@ These principles directly map to:
 AWS-Cloud-Security-Foundations/
 ├─ configs/                   # Device configurations (Core, Distribution, Access, Edge)
 ├─ design-docs/               # Topology diagrams, addressing plans, segmentation logic
-├─ security-controls/         # Management hardening, least privilege design
+├─ security-controls/         # Management hardening, port security, DHCP snooping
 ├─ verification/              # Connectivity tests, security validation + screenshots
-├─ enterprise-hybrid-security-lab.pka   # Full interactive Packet Tracer lab
-└─ future-aws-integration/    # Active: bridge to zero-trust-aws repo
+├─ enterprise-hybrid-security-lab.pka   # Full interactive Packet Tracer lab (100% completed)
+└─ future-aws-integration/    # Bridge to active Zero Trust AWS project
 
 ---
 
@@ -77,6 +77,7 @@ This on-prem foundation is now being extended into production-grade cloud securi
 👉 **[zero-trust-aws](https://github.com/ilyas-360/zero-trust-aws)**  
 Zero Trust Multi-Account AWS Security Architecture (Terraform IaC, SCPs, IAM permission boundaries, hybrid VPN, GuardDuty + Security Hub, etc.)
 
+See `future-aws-integration/` for the conceptual mapping (VLAN segmentation → Security Groups/NACLs, ACL hardening → AWS guardrails, etc.).
 
 ## 📚 Skills Demonstrated
 
